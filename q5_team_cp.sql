@@ -8,3 +8,11 @@ ORDER BY decade)
 SELECT *
 FROM stats_per_decade
 WHERE decade >=1920
+--The trend I noticed is that the average number of strikeouts has increased. This is most likely due to the 
+--imporved performance of pitchers as well as the improvements to research and data available for individual batters.
+
+
+
+
+
+
