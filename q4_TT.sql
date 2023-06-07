@@ -7,11 +7,8 @@ SELECT
         WHEN pos IN ('P', 'C') THEN 'Battery'
         ELSE 'Unknown'
     END AS position_category,
-    COUNT(po) AS putouts_count
-FROM
-    fielding
-WHERE
-    yearid = 2016
-GROUP BY
-    position_category;
+    SUM(po) AS putouts_count
+FROM fielding
+WHERE yearid = 2016
+GROUP BY  position_category;
  
